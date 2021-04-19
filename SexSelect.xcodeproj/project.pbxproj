@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		74739E03262BD44B000861FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74739E02262BD44B000861FE /* AppDelegate.m */; };
-		74739E06262BD44B000861FE /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74739E05262BD44B000861FE /* SceneDelegate.m */; };
 		74739E09262BD44B000861FE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74739E08262BD44B000861FE /* ViewController.m */; };
 		74739E0C262BD44B000861FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74739E0A262BD44B000861FE /* Main.storyboard */; };
 		74739E0E262BD44D000861FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74739E0D262BD44D000861FE /* Assets.xcassets */; };
@@ -16,6 +15,7 @@
 		74739E14262BD44D000861FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74739E13262BD44D000861FE /* main.m */; };
 		74739E1E262BD44D000861FE /* SexSelectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74739E1D262BD44D000861FE /* SexSelectTests.m */; };
 		74739E29262BD44E000861FE /* SexSelectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74739E28262BD44E000861FE /* SexSelectUITests.m */; };
+		74739E3F262BD4BE000861FE /* ZAChooseSexView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74739E3E262BD4BE000861FE /* ZAChooseSexView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +39,6 @@
 		74739DFE262BD44B000861FE /* SexSelect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SexSelect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74739E01262BD44B000861FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		74739E02262BD44B000861FE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		74739E04262BD44B000861FE /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		74739E05262BD44B000861FE /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		74739E07262BD44B000861FE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		74739E08262BD44B000861FE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		74739E0B262BD44B000861FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,6 +52,8 @@
 		74739E24262BD44E000861FE /* SexSelectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SexSelectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74739E28262BD44E000861FE /* SexSelectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SexSelectUITests.m; sourceTree = "<group>"; };
 		74739E2A262BD44E000861FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74739E3D262BD4BE000861FE /* ZAChooseSexView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZAChooseSexView.h; sourceTree = "<group>"; };
+		74739E3E262BD4BE000861FE /* ZAChooseSexView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZAChooseSexView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,10 +104,9 @@
 		74739E00262BD44B000861FE /* SexSelect */ = {
 			isa = PBXGroup;
 			children = (
+				74739E3C262BD4AA000861FE /* View */,
 				74739E01262BD44B000861FE /* AppDelegate.h */,
 				74739E02262BD44B000861FE /* AppDelegate.m */,
-				74739E04262BD44B000861FE /* SceneDelegate.h */,
-				74739E05262BD44B000861FE /* SceneDelegate.m */,
 				74739E07262BD44B000861FE /* ViewController.h */,
 				74739E08262BD44B000861FE /* ViewController.m */,
 				74739E0A262BD44B000861FE /* Main.storyboard */,
@@ -135,6 +134,15 @@
 				74739E2A262BD44E000861FE /* Info.plist */,
 			);
 			path = SexSelectUITests;
+			sourceTree = "<group>";
+		};
+		74739E3C262BD4AA000861FE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				74739E3D262BD4BE000861FE /* ZAChooseSexView.h */,
+				74739E3E262BD4BE000861FE /* ZAChooseSexView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,7 +277,7 @@
 				74739E09262BD44B000861FE /* ViewController.m in Sources */,
 				74739E03262BD44B000861FE /* AppDelegate.m in Sources */,
 				74739E14262BD44D000861FE /* main.m in Sources */,
-				74739E06262BD44B000861FE /* SceneDelegate.m in Sources */,
+				74739E3F262BD4BE000861FE /* ZAChooseSexView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
